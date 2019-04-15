@@ -2,13 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>TBDAngular</title>
-  <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Profile Viewer</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <app-root></app-root>
+<h1>Projeto TBDS</h1>
+<p id="login">
+  Você não está logado ainda, por favor, logue para poder acessar o projeto
+  <button>Entrar como Usuário</button>
+</p>
+<p id="logout">
+  Você está logado como <span id="user"></span>.
+  <button>Sair</button>
+</p>
+<p>
+  <label for="profile">Profile:</label>
+  <input id="profile">
+  <button id="view">View</button>
+</p>
+<dl id="view">
+  <dt>Full name</dt>
+  <dd id="fullName"></dd>
+  <dt>Friends</dt>
+  <dd>
+    <ul id="friends"></ul>
+  </dd>
+  <dt>Alguma coisa</dt>
+  <dd>
+    <ul id="algumacoisa"></ul>
+  </dd>
+</dl>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/solid-auth-client.bundle.js"></script>
+<script src="scripts/rdflib.min.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>
